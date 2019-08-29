@@ -1,0 +1,35 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px,auto); 
+  background: white;
+  border: 0px; 
+}
+
+div, p{
+  background: beige;
+  border: 1px solid burlywood; 
+  text-align: center;
+  vertical-align: bottom;
+  font-size: 30px;
+}
+
+input {
+  padding: 5px;
+  color: cornflowerblue;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+.draggable.over {
+  border: 2px dashed #000;
+}
