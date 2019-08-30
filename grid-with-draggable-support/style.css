@@ -1,21 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:300,400&display=swap');
-
-html body {
-  font-family: 'Raleway'
-}
+@import "../main.css";
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
-  grid-auto-rows: minmax(100px,auto); 
-  background: white;
-  border: 0px; 
+  grid-auto-rows: minmax(100px, auto);
 }
 
-div, p{
+p {
   background: beige;
-  border: 1px solid burlywood; 
+  border: 1px solid burlywood;
   text-align: center;
   vertical-align: bottom;
   font-size: 30px;
