@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:300,400|Ubuntu+Mono|Nanum+Gothic+Coding&display=swap');
+
+html body {
+  font-family: 'Raleway'
+}
+
+.wrapper {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr;
+  background: white;
+  border: 0px;
+}
+
+div {
+  background: beige;
+  border: 1px solid burlywood;
+  text-align: center;
+  vertical-align: bottom;
+  font-size: 30px;
+}
+
+/* code{
+  font-family: 'Nanum Gothic Coding', monospace !important;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: .25em .5em;
+  color: #202023;
+  background-color: ivory
+} */
+
+.code {
+  margin: 0em 1em 0em 1em;
+  padding: 0em 1em 0em 1em;
+  background-color: rgba(255, 255, 0, 0.301) 
+}

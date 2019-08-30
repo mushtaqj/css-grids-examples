@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:300,400&display=swap');
+
+html body {
+  font-family: 'Raleway'
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(5,1fr);

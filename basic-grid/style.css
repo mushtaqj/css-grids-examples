@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:300,400&display=swap');
+
+html body {
+  font-family: 'Raleway'
+}
+
+.wrapper {
+  display: grid;
+  background: white;
+  border: 0px;
+}
+
+div,
+p {
+  background: beige;
+  border: 1px solid burlywood;
+  text-align: center;
+  vertical-align: bottom;
+  font-size: 30px;
+}
