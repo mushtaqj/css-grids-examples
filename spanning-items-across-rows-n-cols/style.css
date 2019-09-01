@@ -1,0 +1,12 @@
+@import "../main.css";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 
+}
+
+.one {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background: yellow;
+}
