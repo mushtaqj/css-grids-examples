@@ -4,3 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 4fr;
 }
+
+pre{
+  font-family: 'Nanum Gothic Coding', monospace;
+}

@@ -11,24 +11,24 @@
 </head>
 
 <body>
+  <a href="../../index.html">Go Back</a>
   <h3>Grid container - Explicit Grids with grid-template-rows FR Unit</h3>
 
   <section>
     <p class="desciption">
       The fr unit helps create flexible grid tracks. It represents a fraction of the available space in the grid
-      container
-      (works like Flexbox’s unitless values).
+      container(works like Flexbox’s unitless values).
       In this example, items 1 and 2 take up the first two (of four) sections while item 3 takes up the last two.
     </p>
   </section>
 
-  <section class="code">Code
-    <pre>
-    <code>grid-template-columns: 1fr 1fr 2fr</code>
+  <pre>
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 4fr;
+    }
   </pre>
-  </section>
 
-  <a href="../../index.html">Go Back</a>
   <div class="wrapper">
     <div class="draggable">One</div>
     <div class="draggable"> Two</div>

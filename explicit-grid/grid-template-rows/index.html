@@ -11,6 +11,23 @@
 
 <body>
   <a href="../../index.html">Go Back</a>
+  
+  <h3>Grid container - Explicit Grids with grid-template-rows</h3>
+
+  <section>
+    A row track is created for each value specified for grid-template-rows. Track size values can be any non-negative,
+    length value (px, %, em, etc.)
+    Items 1 and 2 have fixed heights of 50px and 100px.
+    Because only 2 row tracks were defined, heights of items 3 and 4 are defined by the contents of each.
+  </section>
+
+  <pre>
+    .wrapper {
+      display: grid;
+      grid-template-rows: 150px 100px 300px;
+    }
+  </pre>
+
   <div class="wrapper">
     <div class="draggable">One</div>
     <div class="draggable"> Two</div>
