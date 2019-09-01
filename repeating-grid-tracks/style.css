@@ -1,0 +1,8 @@
+@import "../main.css";
+
+.wrapper {
+  display: grid;
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}

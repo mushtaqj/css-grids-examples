@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid Gaps</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <a href="../index.html">Go Back</a>
+
+  <h3>Grid Gaps</h3>
+
+  <section>
+    <p>
+      The grid-column-gap and grid-row-gap properties create gutters between columns and rows.
+
+      Grid gaps are only created in between columns and rows, and not along the edge of the grid container 🙌 .
+      Gap size values can be any non-negative, length value (px, %, em, etc.)
+
+      grid-gap is shorthand for grid-row-gap and grid-column-gap.
+
+      If two values are specified, the first represents grid-row-gap and the second grid-column-gap
+
+      One value sets equal row and column gaps.
+    </p>
+  </section>
+
+  <pre>
+    .wrapper {
+      display: grid;
+      grid-template-rows: repeat(4, 100px);
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 30px;
+      grid-column-gap: 10px;
+    }
+
+    /*One value sets equal row and column gaps.*/
+    grid-gap: 2rem;
+
+    /*One value sets equal row and column gaps.*/
+    grid-gap: 100px 1em
+  </pre>
+  <div class="wrapper">
+    <div>One</div>
+    <div> Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+  </div>
+</body>
+
+</html>

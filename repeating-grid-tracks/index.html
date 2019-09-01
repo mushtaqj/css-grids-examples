@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Repeating grid tracks</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <a href="../index.html">Go Back</a>
+
+  <h3>Repeating grid tracks</h3>
+
+  <section>
+    <p>
+      Define repeating grid tracks using the repeat() notation. This is useful for grids with items with equal sizes or
+      many items.
+
+      The repeat() notation accepts 2 arguments: the first represents the number of times the defined tracks should
+      repeat, and the second is the track definition.
+
+      repeat() can also be used within track listings.
+
+      In this example, the first and last column tracks have widths of 30px, and the 3 column tracks in between, created
+      by repeat(), have widths of 1fr each.
+    </p>
+  </section>
+
+  <pre>
+    .wrapper {
+      display: grid;
+      grid-template-rows: repeat(4, 100px);
+      grid-template-columns: repeat(3, 1fr);
+    }
+  </pre>
+  <div class="wrapper">
+    <div>One</div>
+    <div> Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+  </div>
+</body>
+
+</html>
