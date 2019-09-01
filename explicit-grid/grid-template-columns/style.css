@@ -1,6 +1,6 @@
 @import "../../main.css";
 
 .wrapper {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 150px 100px 300px;
 }

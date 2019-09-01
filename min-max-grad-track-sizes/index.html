@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Minimum and Maximum Grid Track Sizes</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <a href="../index.html">Go Back</a>
+
+  <h3>Minimum and Maximum Grid Track Sizes</h3>
+
+  <section>
+    <p>
+      Tracks sizes can be defined to have a minimum and/or maximum size with the minmax() function.
+
+      The minmax() function accepts 2 arguments: the first is the minimum size of the track and the second the maximum
+      size. Alongside length values, the values can also be auto, which allows the track to grow/stretch based on the
+      size of the content.
+
+      In this example, the first row track is set to have a minimum height of 100px, but its maximum size of auto will
+      allow the row track to grow it the content is taller than 100px.
+
+      The first column track has a minimum size of auto, but its maximum size of 50% will prevent it from getting no
+      wider than 50% of the grid container width.
+    </p>
+  </section>
+
+  <pre>
+    .wrapper {
+      display: grid;
+      grid-template-rows:    minmax(100px, auto);
+      grid-template-columns: minmax(auto, 50%) 1fr 3em;
+    }
+  </pre>
+  <div class="wrapper">
+    <div>One</div>
+    <div> Two</div>
+    <div>Three</div>
+    <div>Four.
+      This item has more content than the others and is intentionally, unnecessarily, superfluously, uselessly, and
+      annoyingly verbose for the sake of example. This item has more content than the others and is intentionally,
+      unnecessarily, superfluously, uselessly, and annoyingly verbose for the sake of example. This item has more
+      content than the others and is intentionally, unnecessarily, superfluously, uselessly, and annoyingly verbose for
+      the sake of example.
+    </div>
+    <div>Five</div>
+  </div>
+</body>
+
+</html>
