@@ -2,60 +2,65 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Spanning Items Across Rows and Columns</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spanning Items Across Rows and Columns</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
 <body>
-  <a href="../index.html">Go Back</a>
+<a href="../index.html">Go Back</a>
 
-  <h3>Spanning Items Across Rows and Columns</h3>
+<h3>Spanning Items Across Rows and Columns</h3>
 
-  <section>
-    <p>
-      Grid items span only one column and row track by default, but can span multiple row and/or column tracks using the
-      same properties to position them.
+<section>
+    Grid items span only one column and row track by default, but can span multiple row and/or column tracks using the
+    same properties to position them.
 
-      <pre>
-        grid-column-start: 1;
-        grid-column-end: 4;
-      </pre>
+    Set a grid item to span more than one column track by setting grid-column-end to a column line number that is more
+    than one column away from grid-column-start.
+    <pre>
+      grid-column-start: 1;
+      grid-column-end: 4;</pre>
 
-      Set a grid item to span more than one column track by setting grid-column-end to a column line number that is more
-      than one column away from grid-column-start.
+    Grid items can also span across multiple row tracks by setting grid-row-end to more than one row track away.
+    <pre>
+      grid-row-start: 1;
+      grid-row-end:   4;</pre>
 
-      <pre>
-        grid-row-start: 1;
-        grid-row-end:   4;
-      </pre>
-      Grid items can also span across multiple row tracks by setting grid-row-end to more than one row track away.
-    </p>
-  </section>
+    Shorthand properties grid-row and grid-column can also be used to position and span grid items more than one row or
+    column.
+    <pre>
+      grid-row:    2 / 5;
+      grid-column: 2 / 4;</pre>
 
-  <pre>
-    .wrapper {
-      display: grid;
-      grid-template-columns: 50% 
-    }
-    
-    /*Shorthand properties grid-row and grid-column can also be used to position and span grid items more than one row or column.*/
-    grid-row:    2 / 5;
-    grid-column: 2 / 4;
+    The keyword span, followed by the # of columns or rows to span, can also be used.
+    <pre>
+      grid-row:    2 / span 3;
+      grid-column: span 2;</pre>
+</section>
 
-    /*The keyword span, followed by the # of columns or rows to span, can also be used.*/
-    grid-row:    2 / span 3;
-    grid-column: span 2;
-  </pre>
-  <div class="wrapper">
+<pre>
+ .wrapper {
+    display: grid;
+    grid-template-columns: 50%
+  }
+
+  .one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: yellow;
+  }
+</pre>
+
+<div class="wrapper">
     <div class="one">One</div>
     <div> Two</div>
     <div>Three</div>
     <div>Four</div>
     <div>Five</div>
-  </div>
+</div>
 </body>
 
 </html>

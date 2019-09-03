@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Lines</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+<a href="../index.html">Go Back</a>
+
+<h3>Naming Grid Lines</h3>
+
+<section>
+    Grid lines can be named when defining the grid with the grid-template-rows and grid-template-columns properties.
+
+    Assign names to grid lines when defining your grid with the grid-template-rows and grid-template-columns properties.
+    In line names, avoid keywords that appear in the specification (e.g. span) to not cause confusion.
+    Assigned line names must be wrapped in square brackets [name-of-line] and placed relative to the grid tracks.
+    <pre>
+      grid-template-rows:    [row-1-start] 1fr [row-2-start] 1fr [row-2-end];
+      grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-3-start] 1fr [col-3-end];</pre>
+
+    Multiple names can be assigned to grid lines by adding names within square brackets and separating each with a
+    whitespace.
+    Each line name can then be referenced when positioning grid items by line names.
+    <pre>
+      grid-template-rows:    [row-start row-1-start] 1fr [row-1-end row-2-start] 1fr [row-2-end row-end];
+      grid-template-columns: [col-start] 1fr [col-2-start] 1fr [col-3-start] 1fr [col-end];</pre>
+    Grid items can also span across multiple row tracks by setting grid-row-end to more than one row track away.
+</section>
+
+<pre>
+
+  .wrapper {
+    display: grid;
+    grid-template-rows: [row-1-start] 1fr [row-2-start] 1fr [row-2-end];
+    grid-template-columns: [left] 1fr [center] 1fr [right] 1fr [end];
+  }
+
+  .one {
+    grid-column: left/end;
+    grid-row: row-2-start/row-2-end;
+    background: yellow;
+  }
+
+</pre>
+<div class="wrapper">
+    <div class="one">One</div>
+    <div> Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+</div>
+</body>
+
+</html>
