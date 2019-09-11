@@ -9,7 +9,7 @@ html body {
 
 .wrapper {
   margin: 1em;
-  background: white;
+  background: lightgoldenrodyellow;
   border: 1px solid yellow;
 }
 
@@ -19,6 +19,9 @@ div {
   text-align: center;
   vertical-align: bottom;
   font-size: 30px;
+  resize: both;
+  overflow: auto;
+  grid-row: 1/2;
 }
 
 pre
